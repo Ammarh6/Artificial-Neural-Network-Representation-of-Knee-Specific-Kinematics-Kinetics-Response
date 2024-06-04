@@ -40,7 +40,7 @@ for knee in range(len(knees)):
                 print(str(var_names[int(var)]))
                 # Load pretrained model
                 model = keras.models.load_model(
-                    r'dat/POLS_GPU/NN_Models/Models/' + str(knees[knee]) + str(var_names[int(var)]))
+                    r'dat/ANN_Models/' + str(knees[knee]) + str(var_names[int(var)]))
                 # Predict Kinematics
                 PredKinmatics = model.predict(kinetics)
                 # Plot data
@@ -96,7 +96,7 @@ for knee in range(len(knees)):
                 print(str(var_names[int(var)]))
                 # Load pretrained model
                 model = keras.models.load_model(
-                    r'dat/POLS_GPU/NN_Models/Models/' + str(knees[knee]) + str(var_names[int(var)]))
+                    r'dat/ANN_Models/' + str(knees[knee]) + str(var_names[int(var)]))
                 # Predict Kinematics
                 PredKinmatics = model.predict(kinetics[0:])
                 # Plot data
@@ -159,7 +159,7 @@ for knee in range(len(knees)):
                 print(str(var_names[int(var)]))
                 # Load pretrained model
                 model = keras.models.load_model(
-                    r'dat/POLS_GPU/NN_Models/Models/' + str(knees[knee]) + str(var_names[int(var)]))
+                    r'dat/ANN_Models/' + str(knees[knee]) + str(var_names[int(var)]))
                 # Predict Kinematics
                 PredKinmatics = model.predict(kinetics)
                 # Plot data

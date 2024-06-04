@@ -3,7 +3,7 @@ import pandas as pd
 from tensorflow import keras
 import matplotlib.pyplot as plt
 import numpy as np
-import NN
+import Create_ANN_Models
 from sklearn.metrics import r2_score, mean_squared_error
 
 
@@ -11,7 +11,7 @@ def main():
     # Font size for legend
     plt.rc('legend', fontsize=14)
     # Select knee to include in the figure
-    knee = 'oks009'
+    knee = 'oks001'
     # Read raw data
     kinetics_raw = pd.read_hdf(
         'dat/joint_mechanics-' + str(knee) + '/joint_mechanics-' + str(knee) + '_x_hierarchical_data.h5')
