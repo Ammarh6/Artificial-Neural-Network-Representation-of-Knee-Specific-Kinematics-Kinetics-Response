@@ -2,7 +2,7 @@ import pandas as pd
 from tensorflow import keras
 import matplotlib.pyplot as plt
 import numpy as np
-import Create_ANN_Models
+import Create_ANN_Models as ANN
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
     # List of kinematics
     var_names = list(kinematics)
     # Partition the data to separate test included in raw data
-    kinetics_keys, kinematics_keys = NN.partition_data(kinetics, kinematics)
+    kinetics_keys, kinematics_keys = ANN.partition_data(kinetics, kinematics)
     ############################################################################
     ############################################################################
     # Select indices for oks006 laxity data
